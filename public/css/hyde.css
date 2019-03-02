@@ -98,6 +98,16 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+.footer .copy-date {
+  font-size: 0.6rem;
+  display: inline;
+}
+
+.footer .powered-by {
+  font-size: 0.6rem;
+  display: inline;
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
