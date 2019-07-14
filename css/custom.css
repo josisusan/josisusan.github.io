@@ -7,3 +7,28 @@
 .sidebar-avatar {
   margin-bottom: 45px;
 }
+
+#intro{
+  font-size: 50px;
+}
+
+#first-name{
+  display: inline;
+  color: #6a9fb5;
+  font-weight: bold;
+}
+
+#last-name{
+  display: inline;
+  font-weight: bold;
+}
+
+#social-links {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px dotted #ccc;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
