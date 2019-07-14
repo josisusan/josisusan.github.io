@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-avatar">
+      {% avatar josisusan size=100 %}
+    </div>
+    <div class="sidebar-about">
+      <h1>
+        {{ site.title }}
+      </h1>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.data.navigation %}
+      {% for node in pages_list %}
+        <a class="sidebar-nav-item{% if page.url == node.path %} active{% endif %}" href="{{ site.path }}{{ node.path }}">{{ node.title }}</a>
+      {% endfor %}
+
+    </nav>
+
+    <!-- <p>&copy; {{ site.time | date: '%Y' }} <h5>Powered by <a href="https://github.com/poole/hyde">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a></h5></p> -->
+    <div class="footer">
+      <div class="copy-date">&copy; {{ site.time | date: '%Y' }} </div>&nbsp; <div class="powered-by">Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a></div>
+    </div>
+  </div>
+</div>
