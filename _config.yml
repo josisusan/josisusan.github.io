@@ -25,7 +25,7 @@ github_username:  josisusan
 # Build settings
 markdown: kramdown
 paginate: 3
-paginate_path: "blog/page:num/"
+
 plugins:
   - jekyll-feed
   - jekyll-avatar
