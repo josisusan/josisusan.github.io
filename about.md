@@ -6,6 +6,6 @@ permalink: /about/
 
 Hi 👋
 
-I am Susan Joshi, a developer working from Nepal. I mostly do backend development (Ruby and Golang) but also interested in the front end stuffs . My goal is to become a full stack developer though.
+I am Susan Joshi, and welcome to my personal page. I have been working mostly on different technologies like Ruby, Golang and Javascript. I consider myself average developer, constanly learning stuffs through different projects and blogposts.
 
 This is my personal static site where the contents are just my personal view and thoughts.
