@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Clean your untracked files"
+date:  2020-04-12 14:38:54 +0545
+tags: [git, cleaning]
+categories: [git, default]
+---
+
+As a developer, we all have the habits of playing around with our code base. This means we are adding different files which we don't want to commit to our branch. One day, I was playing around with bundle commands. As I ran following bundle command:
+
+```bash
+$ bundle install --binstubs
+```
+
+Nothing wrong with this command. This command creates a lot of executables into my `bin` folder which I did not want to commit. As there were many executable files built into the `bin` folder, I had to delete each file manually which is a cumbersome process. There must be a better way to remove all those untracked changes into the project. After doing some research, I found a git command. \\(^-^)/
+
+```bash
+$ git clean -dn
+```
+
+This command lists all the untracked files and directories in my current project. And using `-f` option and path, I can delete those untracked files. So, I used following command:
+
+```bash
+$ git clean -f bin/
+$ git checkout -- bin/
+```
+
+I am also using the `checkout` command to reset the modified files in `bin/` folder.
+
+**Note:** One important thing to notice is that this will remove the file from the project, so we need to be careful while using this command. We can also use interactive mode where git asks for verification before deleting the file.
+
+```bash
+$ git clean -i -f bin/
+```
