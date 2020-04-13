@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Clean your untracked files"
-date:  2020-04-12 14:38:54 +0545
+title: "Clean your untracked files"
+date: 2020-04-12 14:38:54 +0545
 tags: [git, cleaning]
 categories: [git, default]
 ---
