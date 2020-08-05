@@ -115,6 +115,10 @@ hr {
   padding-right: 10px;
 }
 
+.post-content-exerpt {
+  margin: 2rem 0;
+}
+
 .post-title a {
   color: var(--myThemeColor);
 }

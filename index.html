@@ -14,7 +14,9 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span> • <a class="post-tags-index" href="#">{{ post.tags | first | strip | upcase }} </a>
 
-    {{ post.content | truncate: 200 }}
+    <div class="post-content-exerpt">
+      {{ post.content | strip_html | truncate: 200 }}
+    </div>
   </div>
   <hr>
   {% endfor %}
