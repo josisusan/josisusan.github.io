@@ -23,7 +23,7 @@ Soon, the hex code would be scattered in different places. And if the hex code n
 }
 
 .class-name {
-  color: var(--myThemeColor, blue)
+  color: var(--myThemeColor, blue);
 }
 ```
 
