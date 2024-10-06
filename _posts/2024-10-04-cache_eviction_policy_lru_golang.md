@@ -13,7 +13,7 @@ There are several cache eviction policies, each with different strategies for ha
 
 Let us first design a struct to reprsent the cache. Here the size defines the maximum number of items that cache can store. The items are stored in a map with the key as the string and value as the item struct. The `item` struct contains the value and the time it was stored. Assuming the key and value are both strings for simplicity.
 
-```golang main.go
+```golang
 packge main
 
 type item struct {
@@ -37,7 +37,7 @@ func NewLRUCache(size int) *LRUCache {
 
 Now, lets define the `Get` and `Set` methods to store and retrieve the fromt the cache. Also, we will define `All()` method get all the result from the cache stored at the moment.
 
-```golang main.go
+```golang
 func (lru *LRUCache) Set(key string, value string) {
 	var (
 		needToDeleteKey string
@@ -82,8 +82,10 @@ func (lru *LRUCache) All() map[string]string {
 	return output
 }
 ```
+
 Now, we can use the struct in main function to test
-```golang main.go
+
+```golang
 func main() {
 	lru := NewLRUCache(2)
 	lru.Set("key1", "value1")
