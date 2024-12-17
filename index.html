@@ -14,8 +14,8 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span> • <a class="post-tags-index" href="#">{{ post.tags | first | strip | upcase }} </a>
 
-    <div class="post-content-exerpt">
-      {{ post.content | strip_html | truncate: 200 }}
+    <div class="post-content-exerpt post-content">
+      {{ post.content | strip_html | truncate: 200 }} <span class="post-read-more"><a href="{{ post.url }}">Read More</a></span>
     </div>
   </div>
   <hr>

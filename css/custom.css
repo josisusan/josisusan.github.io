@@ -162,9 +162,20 @@ hr {
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
-.post-content {
+.post-content, .page-content {
   line-height: 1.5rem;
 }
+
+.post-read-more a {
+  text-decoration: non;
+  font-size: 12px;
+  color: var(--myThemeColor);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 
 code,
 pre {
