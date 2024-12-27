@@ -166,6 +166,12 @@ hr {
   line-height: 1.5rem;
 }
 
+.post-content {
+  .post-image {
+    width: 80%;
+  }
+}
+
 .post-read-more a {
   text-decoration: non;
   font-size: 12px;
