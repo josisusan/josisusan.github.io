@@ -125,6 +125,15 @@ hr {
   color: var(--myThemeColor);
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid var(--myThemeColor);
+  margin: 10px 0;
+  padding: 15px 20px;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 #intro{
   font-size: 50px;
 }
