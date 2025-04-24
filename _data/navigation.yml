@@ -2,3 +2,5 @@
   path: /
 - title: About
   path: /about/
+- title: Archive
+  path: /archive/
